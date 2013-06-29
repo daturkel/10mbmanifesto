@@ -17,3 +17,14 @@ If you see a minor error, feel free to submit an issue via Github. If you want t
 ## I want to make my own site.
 
 Download the contents of this repo to your desktop, delete my `index.html` file and rename the `template.html` file to `index.html`, read the [Foundation Documentation](http://foundation.zurb.com/docs/) and go nuts. If you want to use a piece of Foundation that I didn't include, you can [customize a download here](http://foundation.zurb.com/download.php#customizeFoundation) and then replace the relevant files, most likely `foundation.min.js` and `foundation.min.css`.
+
+## Thanks
+
+Thanks to the following for making this possible:
+
+- [Neocities](http://neocities.org/)
+- [Zepto](http://zeptojs.com/)
+- [Modernizr](http://modernizr.com/)
+- [Normalize](http://necolas.github.io/normalize.css/)
+- [Foundation](http://foundation.zurb.com/)
+- You!
