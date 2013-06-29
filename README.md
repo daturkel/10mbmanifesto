@@ -1,5 +1,7 @@
 # The 10 Megabyte Manifesto
 
+Version β1, by [Dan Turkel](http://danturkel.com/).
+
 ## What's this all about?
 
 Read The 10 Megabyte Manifesto [here](http://10mbmanifesto.neocities.org/).
