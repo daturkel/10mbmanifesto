@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The 10 Megabyte Manifesto</title>
+    <link rel="stylesheet" href="foundation.min.css" />
+    <script src="custom.modernizr.js"></script>
+    <script src="zepto.js"></script>
+</head>
+<body>
+	<div class="row">
+        <div class="large-8 large-offset-3 columns">
+            <a title="top"></a>
+            <h2>The 10 Megabyte Manifesto</h2>
+            <h3 class="subheader">Version β1, by <a href="http://danturkel.com/" title="Dan Turkel [dot] com">Dan Turkel</a></h3>
+                    </div>
+        <div class="large-1 columns">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-2 large-offset-1 columns">
+            <h5>Jump to:</h5>
+            <ul class="no-bullet">
+                <li><strong><a href="#introduction">Introduction</a></strong></li>
+                <li><strong><a href="#thesis">Thesis</a></strong></li>
+                <li><strong><a href="#currentcaveats">Current Caveats</a></strong></li>
+                <li><strong><a href="#thissite">This Site</a></strong></li>
+                <li><strong><a href="#getinvolved">Get Involved</a></strong></li>
+            </ul>
+        </div>
+        <div class="large-8 columns">
+            <a name="introduction"></a>
+            <h5>Introduction</h5>
+            <p>This site is hosted on <a href="http://neocities.org/" title="Neocities">Neocities.org</a>. Neocities imposes limitations on what you can host and serve. For one, your files may only be HTML, images, markdown, javascript, or CSS. That means no PHP or Rails or databases or anything like that. Furthermore, you only get <strong>10 megabytes</strong> of space (though this limit may be raised in the future). </p>
+            <p>When I first checked out <a href="http://neocities.org/browse" title="Some Neocities Sites">some of the sites</a> being made with Neocities, I was surprised to see that many of them are simply attempts at making Geocities parodies or homages. That's great and it's fun to have a place to cultivate a nostalgia for the old web, but people shouldn't look at Neocities' limitations and think "I can't do anything cool with this."</p>
+            <p>Not only are Neocities' limitations not really limitations, you might just find they can be quite enlightening.</p>
+            <a name="thesis"></a>
+            <h5>Thesis</h5>
+            <p>We believe that <strong>stripping down the tech and storage available shouldn't hold you back</strong> for most usage cases. You can still create beautiful, functional, and compelling web content—on Neocities or elsewhere—using the Neocities restrictions.</p>
+            <p>Not only should these limitations not be feared, but they should be embraced. Forcing a minimal approach to a page's design will often result in a more minimal implementation less prone to over-engineering or bloat.</p>
+            <p>When you begin your next web project, ask yourself "Could I do this on Neocities?" This is not to say that you should try to host all your projects on Neocities—there's nothing quite like the value of your own URL and FTP access—but rather, the question is meant to be one of scaling back your plans: maybe you could do what you wanted to do without a huge CMS or Rails or Django or MYSQL. Maybe you could create a lighter, more minimal, faster alternative with just the bare basics.</p>
+            <p><strong>Admittedly, sometimes you can't.</strong> For one, sometimes 10 megabytes just isn't enough. You might want to store lots of images (if you're a photographer or designer showing off your work, or if you're just showing pictures of your summer vacation). Or maybe your app just needs a database or you just need root access to your server. <strong>That's fine—the goal here is to take a step back before you embark with a heavy-handed toolset when you might not need to.</strong> If you need the powertools, go ahead and use them once you've ruled out the simpler options.</p>
+            <a name="currentcaveats"></a>
+            <h5>Current Caveats</h5>
+            <p>I feel that some of the current Neocities limitations are detrimental to a number of usage cases.</p>
+            <p>The first and largest caveat is the inability to add folders. The big problem this creates is that it breaks out-of-the-box compatibility with a number of frameworks that the average user might be inclined to use. These frameworks are small, HTML/CSS/JS only, and static, but they rely on a specific file-structure to run properly without modification. In some situations, this can be easily enough circumvented (see <a href="#thissite"><strong>This Site</strong></a>), but in others, not so. Specifically, frameworks that rely on generative scripts, such as <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> or <a href="http://nanoc.ws/" title="Nanoc">Nanoc</a>, would be a pain to implement as they would generate sites with a folder structure that may be a pain to fix. These projects could be forked to create a flat, one-directory version of what they normally do, <strong>but I believe the better solution would be for Neocities to allow for directories (and multi-file upload) to better suit current frameworks available</strong>.</p>
+            <p>The second caveat is more minor, but it's the lack of support for .txt files. This would allow for implementation of a <code>humans.txt</code> file (see <a href="http://humanstxt.com/" title="Humans.txt">here</a>), a <code>robots.txt</code> (though, understandably, this should likely be blocked for Neocities sites), and any text files that the user feels like sharing. They're lightweight and not subject to any large exploit (that I'm aware of), so I would petition for their inclusion in the future.</p>
+            <p>The last caveat, though this one is perhaps the most minor, is that sites requiring more storage space (for videos or .mp3s or images) may not be able to fit under 10 megabytes. There are plenty of good image optimization resources and techniques, but I feel that, so long as your HTML/CSS/JS resources aren't exceeding 10 megabytes (and they really shouldn't), then you're still within the spirit of the manifesto.</p>
+            <a name="thissite"></a>
+            <h5>This Site</h5>
+            <p>This site is built using a customized version of <a href="http://foundation.zurb.com/" title="Zurb Foundation">Zurb Foundation</a>. Foundation is a framework for easily making responsive sites and it utilizes only HTML, CSS, and JS to do this. (Optionally, one may use SCSS in the development environment, but it's HTML, CSS, and JS that will be uploaded to the server or to Neocities.) Foundation has a simple directory structure by default: in the root is <code>index.html</code>, <code>humans.txt</code> (see <a href="http://humanstxt.com/" title="Humans.txt">here</a>), <code>robots.txt</code>, and the directories <code>css</code> and <code>js</code>, the latter of which has a subdirectory <code>vendor</code>. In order to host this site on Neocities, I had to flatten the directory structure and change links in <code>index.html</code> to recognize those changes. This was a simple change on my part, but I feel could be changed on Neocities' part to allow for these directories in the first place (see <a href="#currentcaveats"><strong>Current Caveats</strong></a>).</p>
+            <a name="getinvolved"</a>
+            <h5>Get Involved</h5>
+            <p>In the spirit of open source, there are a number of ways in which you can get involved with The 10 Megabyte Manifesto. The first way is to <a href="https://github.com/daturkel/10mbmanifesto" title="Contribute on Github">contribute on Github</a>. This whole site, along with a `template.html`, is available for your bug-reports, suggestions, contributions, and pull requests. This can be anything from the design to the body copy. If you have a question about contributing, you can email me at <a href="mailto:dan@danturkel.com">dan [at] danturkel [dot] com</a>.</p>
+            <p>Alternatively, if you want to show off what you've done, either on Neocities or on your own site, but adhering to the Neocities limitations (though bending the no-directory rule where convenient), <a href="mailto:dan@danturkel.com">send me an email</a> and I'll add it to a list at the bottom of this page.</p>
+            <p>Lastly, if you have any ideas, criticisms, complaints, raves, or rants to contribute, <a href="mailto:dan@danturkel.com">send 'em my way</a> and I'll do my best to get back to you as quickly as I can.</p>
+            <p>Have fun.</p>
+            <p><a href="#top" title="Back to top">Back to top.</a><p>
+        </div>
+        <div class="large-1 columns">
+        </div>
+    <script src="foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
