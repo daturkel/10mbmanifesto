@@ -2,6 +2,8 @@
 
 Version β1, by [Dan Turkel](http://danturkel.com/).
 
+Note: I am not affiliated with Neocities.org.
+
 ## What's this all about?
 
 Read The 10 Megabyte Manifesto [here](http://10mbmanifesto.neocities.org/).
